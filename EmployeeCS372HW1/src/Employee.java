@@ -5,6 +5,7 @@ public class Employee {
     String position;
     String name;
 
+    //PT -- this needs to be static
     private int IDpool = 1;
     Employee(String name_, String hireDate_, String position_) {
         ID = IDpool+1;
@@ -17,4 +18,7 @@ public class Employee {
     public int getID() { return ID; }
     public String getHireDate() { return hireDate; }
     public String getSuperior() { return Superior; }
+    
+    //PT -- get and set functions for position, name?
+    //   -3
 }
