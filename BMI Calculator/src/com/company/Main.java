@@ -9,6 +9,8 @@ public class Main {
 	    int heightInches = input.nextInt();
 	    int weightPounds = input.nextInt();
 
+	    //PT -- name these numbers:
+	    //    final double INCHES_PER_METER = 39.37;
 	    double heightMeter = heightInches / 39.37;
 	    double weightKilo = weightPounds / 2.205;
 	    double BMI = weightKilo / (heightMeter * heightMeter);
