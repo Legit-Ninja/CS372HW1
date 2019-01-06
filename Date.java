@@ -24,6 +24,7 @@ public class Date {
         public static int getYear() (return date[2]; )
         public static int getDifference(Date otherDate)     //is supposed to be able to return the difference in days between two dates
         {
+                //PT -- this could be done more efficiently. The totalDays code probably should be a function
             int totalDays = 365* this.getYear();      //adds up number of days since 1/1/0000
             for (int i = 0; i < this.getMonth(), i++)      //adds to current month
                 totalDays+=monthDays[i]
@@ -41,6 +42,7 @@ public class Date {
 
         public static Date newDate(int day_, int month_, int year_)
         {
+                //PT -- What if these values aren't legal?  -3
             Date newerDate = new Date(day_, month_, year_);
             return newerDate;
         }
